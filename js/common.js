@@ -76,7 +76,9 @@ this.options)});b._afterUpdate&&b._afterUpdate(a,b._groups)};b._update=function(
 		$firstAnimatingElems = $myCarousel.find('.item:first').find("[data-animation ^= 'animated']");
 
 	//Initialize carousel
-	$myCarousel.carousel();
+	$myCarousel.carousel({
+    pause: "false"
+});
 
 	//Animate captions in first slide on page load
 	doAnimations($firstAnimatingElems);
