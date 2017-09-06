@@ -36,7 +36,8 @@ p {
 	margin-top:15px;
 }
 .bg-primary {
-	background-color:#f05f40;
+	/*background-color:#f05f40;*/
+	background-color:#2eb2ff;
 }
 .bg-dark {
 	color:#ccc;
@@ -1066,7 +1067,7 @@ input.error,textarea.error {
 	.section-heading {
 		font-size:30px;
 	}
-	#quote-carousel .carousel-indicators .active {
+	#quote-carousel .carousel-indicators .active:not(.noActive) {
 		width:80px;
 		height:80px;
 	}
