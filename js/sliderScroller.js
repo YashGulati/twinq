@@ -2,13 +2,15 @@
 $(document).ready(function() {
   console.log($("body").scrollTop());
 
+
+if ($("body").scrollTop() == 0)
   setTimeout(function(){
     var top = jQuery('#about').offset().top;
-    if ($("body").scrollTop() == 0) {
-      $("body").animate({
-        scrollTop:  top - 10
-      });
-    }
+
+    $("body").animate({
+      scrollTop:  top - 10
+    });
+
   }, 5000);
 });
 

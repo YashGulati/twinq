@@ -357,7 +357,7 @@ body {
 	webkit-tap-highlight-color:#222;
 }
 .carousel-caption {
-	 top:30%;
+	 top:18%;
 }
 .main-container {
 	padding:40px 15px;
@@ -432,7 +432,8 @@ body {
 }
 .intro .item:before {
 	content:"";
-	background-color:rgba(0,0,0,0.5);
+	/*background-color:rgba(0,0,0,0.5);*/
+	background-color:rgba(5,20,80,0.4);
 	position:absolute;
 	left:0;
 	top:0;
