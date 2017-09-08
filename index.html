@@ -143,8 +143,15 @@
 		<a href="#" class="btn btn-round btn-white btn-xl">Find a Cause!</a>
 	</div>
 </div>
-<div class="col-md-4">
-	<img src="https://s3-eu-west-1.amazonaws.com/layanademo/wom.jpg" alt="">
+<div class="col-md-4" style="overflow: hidden;">
+	<div id="card">
+  <div class="front">
+    <img src="images/sec2.jpg" />
+  </div>
+  <div class="back">
+		<img src="images/sec2.jpg" />
+  </div>
+</div>
 </div>
 <div class="col-md-4 bg-dark">
 	<div class="box">
@@ -204,9 +211,10 @@
 			<div class="iconbox bg-primary">
 				<i class="fa fa-2x fa-trophy wow bounceIn text-fade"></i>
 			</div>
-			<h3>Bootstrap Template</h3>
+			<h3>Web Development</h3>
 			<p class="text-muted">
-				 Duis at risus dignissim, mollis augue quis, congue leo. Curabitur sed lacus ut lectus pharetra malesuada et sit amet ligula.
+				Web Design for your business, that will drive more people to your website and turn visitors
+				into customers.
 			</p>
 		</div>
 	</div>
@@ -215,9 +223,9 @@
 			<div class="iconbox bg-dark">
 				<i class="fa fa-2x fa-cloud wow bounceIn text-fade" data-wow-delay=".1s"></i>
 			</div>
-			<h3>Responsive Layout</h3>
+			<h3>Domain + Hosting</h3>
 			<p class="text-muted">
-				 Duis at risus dignissim, mollis augue quis, congue leo. Curabitur sed lacus ut lectus pharetra malesuada et sit amet ligula.
+				 
 			</p>
 		</div>
 	</div>
@@ -226,7 +234,7 @@
 			<div class="iconbox bg-primary">
 				<i class="fa fa-2x fa-newspaper-o wow bounceIn text-fade" data-wow-delay=".2s"></i>
 			</div>
-			<h3>Theme Support</h3>
+			<h3>Social Media Marketing</h3>
 			<p class="text-muted">
 				 Duis at risus dignissim, mollis augue quis, congue leo. Curabitur sed lacus ut lectus pharetra malesuada et sit amet ligula.
 			</p>
@@ -242,7 +250,7 @@
 			<div class="iconbox bg-dark">
 				<i class="fa fa-2x fa-yelp wow bounceIn text-fade"></i>
 			</div>
-			<h3>MultiPurpose Use</h3>
+			<h3>SEO, Google AdWords &amp; Analytics</h3>
 			<p class="text-muted">
 				 Duis at risus dignissim, mollis augue quis, congue leo. Curabitur sed lacus ut lectus pharetra malesuada et sit amet ligula.
 			</p>
@@ -264,7 +272,7 @@
 			<div class="iconbox bg-dark">
 				<i class="fa fa-2x fa-desktop wow bounceIn text-fade" data-wow-delay=".2s"></i>
 			</div>
-			<h3>Infinite Colors</h3>
+			<h3>Android, iOS development</h3>
 			<p class="text-muted">
 				 Duis at risus dignissim, mollis augue quis, congue leo. Curabitur sed lacus ut lectus pharetra malesuada et sit amet ligula.
 			</p>
@@ -890,5 +898,19 @@
 <script src="js/common.js"></script>
 <script src="js/navScroll.js"></script>
 <script src="js/sliderScroller.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+<script type="text/javascript">
+function rot() {}
+$("#card").flip({
+	axis: 'y',
+	trigger: 'manual',
+	reverse: true
+});
+$(document).ready(function() {
+	setInterval(function(){
+		$("#card").flip('toggle');
+	}, 2500);
+});
+</script>
 </body>
 </html>
