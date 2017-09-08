@@ -6,7 +6,7 @@ $(document).ready(function() {
 if ($("body").scrollTop() == 0)
   setTimeout(function(){
     var top = jQuery('#about').offset().top;
-
+    
     $("body").animate({
       scrollTop:  top - 10
     });
