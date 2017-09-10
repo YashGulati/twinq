@@ -1169,3 +1169,7 @@ input.error,textarea.error {
   position: absolute;
   /*-webkit-backface-visibility: hidden;*/
 }
+
+.footer-social-media {
+	text-align: center;
+}
